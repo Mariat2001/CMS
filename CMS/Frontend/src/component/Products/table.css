@@ -1,0 +1,197 @@
+
+
+.table-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start; /* Adjust alignment */
+	margin-left: 5%;
+	margin-top: 220px; /* Adjust the top margin to match your design */
+	position: relative;
+	z-index: 0;
+	max-height: 400px; /* Adjust the max height as needed */
+	overflow-y: auto; /* Reset z-index */
+  }
+  
+  /* Update the table styles */
+  table {
+	width: auto; /* Allow the table to take its natural width */
+	border-collapse: collapse;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 12px;
+	width: 100%;
+	margin-top: 30px;
+	
+  }
+  
+  /* Update the table header styles */
+  th {
+	background: #152147;
+	color: white;
+	font-weight: bold;
+	border-bottom: 2px solid #4158D0;
+	font-size: 20px;
+	padding: 20px 10px;
+	text-align: center;
+  }
+  
+  /* Update the table cell styles */
+  td,
+  th {
+	padding: 15px 10px;
+	font-size: 18px;
+	text-align: center;
+  }
+  
+  td {
+	background-color: #12192c;
+	color: #fff;
+  }
+  
+  /* Add media queries for smaller screens */
+  @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+	table {
+	  width: 100%;
+	}
+  
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+	  display: block;
+	}
+  
+	thead tr {
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
+  
+	tr {
+	  border: 1px solid #ccc;
+	}
+  
+	td {
+	  border: none;
+	  border-bottom: 1px solid #eee;
+	  position: relative;
+	  padding-left: 50%;
+	}
+  
+	td:before {
+	  position: absolute;
+	  top: 6px;
+	  left: 6px;
+	  width: 45%;
+	  padding-right: 10px;
+	  white-space: nowrap;
+	  content: attr(data-column);
+	  color: #000;
+	  font-weight: bold;
+	}
+  }
+  
+  /* Other styles remain the same */
+  .credit a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 800;
+  }
+  
+  .credit {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 10px;
+	color: #fff;
+	text-align: center;
+  }
+  
+  /* Update button styles */
+  .button {
+	background-color: #8758ff;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	margin: 0 4px;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: none;
+	margin-left: 10px;
+  }
+  
+  .button1 {
+	background-color: #8758ff;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	margin: 0 4px;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: none;
+  }
+  
+  .button:hover {
+	background-color: #c850c0;
+  }
+  
+  .button:active {
+	background-color: #c850c0;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+  
+  /* Pagination styles */
+  .pagination {
+	margin-top: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+  }
+  
+  .pagination button {
+	background-color: #8758ff;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	margin: 0 4px;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: none;
+  }
+  
+  .pagination button:hover {
+	background-color: #8758ff;
+  }
+  
+  .pagination button.active {
+	background-color: #8758ff;
+	font-weight: bold;
+  }
+  
+  /* Add button container styles */
+  .add-button-container {
+	position: relative; /* Change to absolute positioning */
+	top: 75px;
+	right: 100px;
+	z-index: 1000;
+	transition: right 0.3s ease; /* Add transition for smooth effect */
+  }
+  .btnadd{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 93%;
+	background-color: #152147;
+	
+  }
+  .text-add{
+	color:white;
+  }
+
+
+
+
+  

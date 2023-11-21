@@ -1,0 +1,100 @@
+/* Header.css */
+.header {
+  background-color: #9F85FF;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: margin-left 0.3s; 
+  position: relative;
+  background-color: #9F85FF;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width:80%;
+  margin: -50px;
+  margin-top:-25px;
+  height: 75px;
+  width: 107%;
+right: 5%;
+}
+
+
+image{
+  width: 35%;
+  left: 20%;
+}
+/* When the sidebar is not collapsed */
+.app:not(.collapsed) .header {
+  margin-left: 250px; /* Adjust the margin to match your sidebar width */
+}
+
+/* When the sidebar is collapsed */
+.app.collapsed .header {
+  margin-left: 80px; /* Adjust the margin to match your collapsed sidebar width */
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ff6600;
+}
+
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ff6600;
+}
